@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login </title>
+    <link rel="stylesheet" href="style.css">
+    <!--- image-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        img{
+        height:100px;
+        width:500px;
+    </style>
+</head>
+<body>
+<div class = "full-page">
+    <div class ="navbar">
+        <div>
+            <h2 align="right"><a href="website.html">EDAS</a></h2>
+        </div>
+        <nav>
+            <ul id = "Menu Items">
+                <li><a href ="a">Home</a></li>
+                <li><a href ="About Us.html">About Us</a></li>
+                <li><a href = "a">Info</a></li>
+                <li><a href ="a">Services</a></li>
+                <li><a href ="Contact Us.html">Contact Us</a></li>
+                <li><a href="login.html"><button class ="login btn" onclick="document.getElementById('login-form').style.display='block'"
+                                                 style="width:auto;">Login</button></a>
+                </li>
+            </ul>
+        </nav>
+        <!--navigation finished--->
+    </div>
+</div>
+
+<div class = "slider">
+    <div class ="sliders">
+        <input type = "radio" name = "radio-btn" id = "radio1">
+        <input type = "radio" name = "radio-btn" id = "radio2">
+        <input type = "radio" name = "radio-btn" id = "radio3">
+        <input type = "radio" name = "radio-btn" id = "radio4">
+        <input type = "radio" name = "radio-btn" id = "radio5">
+        <div class ="slide first">
+            <img src ="Screenshot_20221110_073212.png" alt="What to do">
+            kartik
+        </div>
+        <div class ="slide second">
+           <img src ="Screenshot_20221110_073020.png" alt="">
+        </div>
+        <div class ="slide third">
+            <img src ="Screenshot_20221110_073109.png" alt="">
+        </div>
+        <div class ="slide fourth">
+            <img src ="Screenshot_20221110_073035.png" alt="">
+        </div>
+        <div class ="slide fifth">
+            <img src ="Screenshot_20221110_073053.png" alt="">
+        </div>
+
+        <div class ="navigation-auto">
+            <div class = "auto-btn1" ></div>
+            <div class = "auto-btn2" ></div>
+            <div class = "auto-btn3" ></div>
+            <div class = "auto-btn4" ></div>
+            <div class = "auto-btn5" ></div>
+        </div>
+    </div>
+    <div class="navigation-manual">
+        <label for = "radio1" class=" manual-btn"></label>
+        <label for = "radio2" class=" manual-btn"></label>
+        <label for = "radio3" class=" manual-btn"></label>
+        <label for = "radio4" class=" manual-btn"></label>
+        <label for = "radio5" class=" manual-btn"></label>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 4){
+    counter = 1;
+    }
+    }, 5000);
+
+</script>
+<h2>jkh</h2>
+</body>
+</html>
